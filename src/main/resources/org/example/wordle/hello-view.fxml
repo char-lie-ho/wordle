@@ -5,68 +5,111 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="573.0" prefWidth="462.0" spacing="20.0"
-      xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="org.example.wordle.HelloController">
+<VBox alignment="CENTER" prefHeight="626.0" prefWidth="462.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.wordle.HelloController">
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
     <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
         <children>
-            <Label fx:id="box00" alignment="CENTER" prefHeight="70.0" prefWidth="70.0"
-                   style="-fx-border-color: black; -fx-background-color: white;">
+            <Label fx:id="box00" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;">
                 <font>
-                    <Font name="Arial" size="58.0"/>
+                    <Font name="Arial" size="58.0" />
                 </font>
                 <HBox.margin>
-                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                 </HBox.margin>
             </Label>
-            <Label fx:id="box01" alignment="CENTER" prefHeight="70.0" prefWidth="70.0"
-                   style="-fx-border-color: black; -fx-background-color: white;">
+            <Label fx:id="box01" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;">
                 <font>
-                    <Font name="Arial" size="58.0"/>
+                    <Font name="Arial" size="58.0" />
                 </font>
                 <HBox.margin>
-                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                 </HBox.margin>
             </Label>
-            <Label fx:id="box02" alignment="CENTER" prefHeight="70.0" prefWidth="70.0"
-                   style="-fx-border-color: black; -fx-background-color: white;">
+            <Label fx:id="box02" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;">
                 <font>
-                    <Font name="Arial" size="58.0"/>
+                    <Font name="Arial" size="58.0" />
                 </font>
                 <HBox.margin>
-                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                 </HBox.margin>
             </Label>
-            <Label fx:id="box03" alignment="CENTER" prefHeight="70.0" prefWidth="70.0"
-                   style="-fx-border-color: black; -fx-background-color: white;">
+            <Label fx:id="box03" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;">
                 <font>
-                    <Font name="Arial" size="58.0"/>
+                    <Font name="Arial" size="58.0" />
                 </font>
                 <HBox.margin>
-                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                 </HBox.margin>
             </Label>
-            <Label fx:id="box04" alignment="CENTER" prefHeight="70.0" prefWidth="70.0"
-                   style="-fx-border-color: black; -fx-background-color: white;">
+            <Label fx:id="box04" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;">
                 <font>
-                    <Font name="Arial" size="58.0"/>
+                    <Font name="Arial" size="58.0" />
                 </font>
                 <HBox.margin>
-                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                 </HBox.margin>
             </Label>
         </children>
-
     </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" visible="false">
+        <children>
+            <Label fx:id="box10" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;">
+                <font>
+                    <Font name="Arial" size="58.0" />
+                </font>
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <Label fx:id="box11" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;">
+                <font>
+                    <Font name="Arial" size="58.0" />
+                </font>
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <Label fx:id="box12" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;">
+                <font>
+                    <Font name="Arial" size="58.0" />
+                </font>
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <Label fx:id="box13" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;">
+                <font>
+                    <Font name="Arial" size="58.0" />
+                </font>
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+            <Label fx:id="box14" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-border-color: black; -fx-background-color: white;">
+                <font>
+                    <Font name="Arial" size="58.0" />
+                </font>
+                <HBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </HBox.margin>
+            </Label>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" visible="false" />
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+    <Label fx:id="welcomeText" />
 
-    <Label fx:id="welcomeText"/>
-    <TextArea fx:id="guessInput" maxWidth="-Infinity" prefHeight="10.0" prefWidth="219.0"/>
+    <TextField fx:id="guessInput" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="100.0" text="AAAAA">
+      <font>
+         <Font name="Arial" size="20.0" />
+      </font></TextField>
     <Button onAction="#checkGuess" text="Check">
         <font>
-            <Font name="Arial" size="14.0"/>
+            <Font name="Arial" size="14.0" />
         </font>
     </Button>
 </VBox>

@@ -3,10 +3,11 @@ package org.example.wordle;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 
 public class HelloController {
     @FXML
-    private TextArea guessInput;
+    private TextField guessInput;
     @FXML
     private Label welcomeText;
     @FXML
@@ -19,14 +20,17 @@ public class HelloController {
     private Label box03 = new Label();
     @FXML
     private Label box04 = new Label();
-
-    private String word = "hello";
+    public int count = 0;
+    private String word = "HELLO";
 
     @FXML
     protected void checkGuess() {
-        String guess = guessInput.getText();
+        String guess = guessInput.getText().toUpperCase();
         if (guess.length() == 5) {
             Label[] row = {box00, box01, box02, box03, box04};
+            if (!guess.equals(word)) {
+                count++;
+            }
             for (int i = 0; i < guess.length(); i++) {
                 String letter = guess.substring(i, i + 1);
                 row[i].setText(letter);
@@ -38,9 +42,9 @@ public class HelloController {
                     row[i].setStyle("-fx-background-color: #b93737;");
                 }
             }
-            welcomeText.setText(guess);
+            welcomeText.setText("Try: "+ String.valueOf(count) + " / 6");
         } else {
-            welcomeText.setText("Please enter 5 characters.");
+            welcomeText.setText(String.valueOf("Please enter 5 character word."));
         }
     }
 }
