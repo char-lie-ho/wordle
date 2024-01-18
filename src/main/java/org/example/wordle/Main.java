@@ -22,15 +22,81 @@ public class Main {
     private Label box03 = new Label();
     @FXML
     private Label box04 = new Label();
+    @FXML
+    private Label box10 = new Label();
+    @FXML
+    private Label box11 = new Label();
+    @FXML
+    private Label box12 = new Label();
+    @FXML
+    private Label box13 = new Label();
+    @FXML
+    private Label box14 = new Label();
+    @FXML
+    private Label box20 = new Label();
+    @FXML
+    private Label box21 = new Label();
+    @FXML
+    private Label box22 = new Label();
+    @FXML
+    private Label box23 = new Label();
+    @FXML
+    private Label box24 = new Label();
+    private Label box30 = new Label();
+    @FXML
+    private Label box31 = new Label();
+    @FXML
+    private Label box32 = new Label();
+    @FXML
+    private Label box33 = new Label();
+    @FXML
+    private Label box34 = new Label();
+    @FXML
+    private Label box40 = new Label();
+    @FXML
+    private Label box41 = new Label();
+    @FXML
+    private Label box42 = new Label();
+    @FXML
+    private Label box43 = new Label();
+    @FXML
+    private Label box44 = new Label();
+    @FXML
+    private Label box50 = new Label();
+    @FXML
+    private Label box51 = new Label();
+    @FXML
+    private Label box52 = new Label();
+    @FXML
+    private Label box53 = new Label();
+    @FXML
+    private Label box54 = new Label();
+
 
     public int count = 0;
-    WordList wordList = new WordList();
+    //    WordList wordList = new WordList();
     String word = WordList.main(null);
+
     @FXML
     protected void checkGuess() {
         String guess = guessInput.getText().toUpperCase();
+
         if (guess.length() == 5) {
-            Label[] row = {box00, box01, box02, box03, box04};
+            Label[] row = null;
+            if (count == 0) {
+                row = new Label[]{box00, box01, box02, box03, box04};
+            } else if (count == 1) {
+                row = new Label[]{box10, box11, box12, box13, box14};
+            } else if (count == 2) {
+                row = new Label[]{box20, box21, box22, box23, box24};
+            }else if (count == 3) {
+                row = new Label[]{box30, box31, box32, box33, box34};
+            }else if (count == 4) {
+                row = new Label[]{box40, box41, box42, box43, box44};
+            }else if (count == 5) {
+                row = new Label[]{box50, box51, box52, box53, box54};
+            }
+
 //            Set visibility of rows
             if (!guess.equals(word)) {
                 count++;
@@ -40,6 +106,7 @@ public class Main {
                 row4.setVisible(count >= 4);
                 row5.setVisible(count >= 5);
             }
+
             for (int i = 0; i < guess.length(); i++) {
                 String letter = guess.substring(i, i + 1);
                 row[i].setText(letter);
