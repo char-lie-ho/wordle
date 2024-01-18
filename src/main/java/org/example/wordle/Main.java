@@ -42,6 +42,7 @@ public class Main {
     private Label box23 = new Label();
     @FXML
     private Label box24 = new Label();
+    @FXML
     private Label box30 = new Label();
     @FXML
     private Label box31 = new Label();
@@ -118,9 +119,9 @@ public class Main {
                     row[i].setStyle("-fx-background-color: #b93737;");
                 }
             }
-            welcomeText.setText("Try: " + String.valueOf(count) + " / 6");
+            welcomeText.setText("Try: " + count + " / 6");
         } else {
-            welcomeText.setText(String.valueOf("Please enter 5 character word."));
+            welcomeText.setText("Please enter 5 character word.");
         }
     }
 }
