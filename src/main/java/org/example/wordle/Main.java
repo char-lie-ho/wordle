@@ -24,13 +24,14 @@ public class Main {
     private Label box04 = new Label();
 
     public int count = 0;
-    private String word = "HELLO";
-
+    WordList wordList = new WordList();
+    String word = WordList.main(null);
     @FXML
     protected void checkGuess() {
         String guess = guessInput.getText().toUpperCase();
         if (guess.length() == 5) {
             Label[] row = {box00, box01, box02, box03, box04};
+//            Set visibility of rows
             if (!guess.equals(word)) {
                 count++;
                 row1.setVisible(count >= 1);
@@ -56,3 +57,4 @@ public class Main {
         }
     }
 }
+
