@@ -269,7 +269,7 @@
         </font>
     </TextField>
     <HBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="422.0">
-        <Button onAction="#showAnswer" text="Answer">
+        <Button onAction="#showHint" text="Hint">
            <HBox.margin>
                <Insets />
            </HBox.margin>
@@ -282,12 +282,12 @@
                 <Font name="Arial" size="14.0" />
             </font>
           <HBox.margin>
-              <Insets left="110.0" />
+              <Insets left="115.0" />
           </HBox.margin>
         </Button>
         <Button mnemonicParsing="false" onAction="#restartGame" text="Restart">
            <HBox.margin>
-               <Insets left="110.0" />
+               <Insets left="100.0" />
            </HBox.margin>
            <font>
                <Font name="Arial" size="13.0" />

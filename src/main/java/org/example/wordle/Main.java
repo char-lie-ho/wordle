@@ -5,6 +5,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
     @FXML
@@ -157,8 +160,16 @@ public class Main {
         }
     }
 
-    public void showAnswer(ActionEvent e) {
+    public void showHint(ActionEvent e) {
     // TODO: display the answer on screen when clicked
+        List<Character> charList = new ArrayList<>();
+        for (char c : word.toCharArray()) {
+            charList.add(c);
+        }
+
+        // Shuffle the list
+        Collections.shuffle(charList);
+        welcomeText.setText(charList.toString());
     }
 }
 
