@@ -76,13 +76,13 @@ public class Main {
 
     public int count = 0;
     //    WordList wordList = new WordList();
-    String word = WordList.main(null);
+    String word = WordList.getWord();
 
     @FXML
     protected void checkGuess() {
         String guess = guessInput.getText().toUpperCase();
 
-        if (guess.length() == 5) {
+        if (guess.length() == 5 && WordList.checkGuess(guess)) {
             Label[] row = null;
             if (count == 0) {
                 row = new Label[]{box00, box01, box02, box03, box04};
@@ -121,7 +121,7 @@ public class Main {
             }
             welcomeText.setText("Try: " + count + " / 6");
         } else {
-            welcomeText.setText("Please enter 5 character word.");
+            welcomeText.setText("Please enter a valid word.");
         }
     }
 }
