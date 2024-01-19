@@ -124,6 +124,8 @@ public class Main {
         } else {
             welcomeText.setText("Please enter a valid word.");
         }
+        // Empty the textField after each input
+        guessInput.clear();
     }
 
     @FXML
