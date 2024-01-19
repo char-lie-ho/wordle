@@ -129,6 +129,9 @@ public class Main {
         }
         // Empty the textField after each input
         guessInput.clear();
+        if (guess.equalsIgnoreCase(word)){
+            welcomeText.setText("Your guess is correct!");
+        }
     }
 
     @FXML
