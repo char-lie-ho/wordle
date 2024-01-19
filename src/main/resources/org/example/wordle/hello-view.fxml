@@ -5,12 +5,12 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" prefHeight="700.0" prefWidth="462.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.wordle.Main">
+<VBox alignment="CENTER" prefHeight="745.0" prefWidth="443.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.wordle.Main">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
     <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
-        <Label fx:id="box00" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box00" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -18,7 +18,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box01" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box01" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -26,7 +26,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box02" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box02" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -34,7 +34,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box03" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box03" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -42,7 +42,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box04" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box04" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -52,7 +52,7 @@
         </Label>
     </HBox>
     <HBox fx:id="row1" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" visible="false">
-        <Label fx:id="box10" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box10" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -60,7 +60,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box11" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box11" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -68,7 +68,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box12" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box12" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -76,7 +76,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box13" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box13" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -84,7 +84,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box14" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box14" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -94,7 +94,7 @@
         </Label>
     </HBox>
     <HBox fx:id="row2" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" visible="false">
-        <Label fx:id="box20" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box20" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -102,7 +102,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box21" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box21" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -110,7 +110,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box22" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box22" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -118,7 +118,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box23" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box23" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -126,7 +126,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box24" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box24" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -136,7 +136,7 @@
         </Label>
     </HBox>
     <HBox fx:id="row3" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" visible="false">
-        <Label fx:id="box30" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box30" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -144,7 +144,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box31" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box31" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -152,7 +152,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box32" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box32" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -160,7 +160,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box33" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box33" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -168,7 +168,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box34" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box34" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -178,7 +178,7 @@
         </Label>
     </HBox>
     <HBox fx:id="row4" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" visible="false">
-        <Label fx:id="box40" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box40" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -186,7 +186,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box41" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box41" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -194,7 +194,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box42" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box42" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -202,7 +202,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box43" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box43" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
@@ -210,7 +210,7 @@
                 <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
             </HBox.margin>
         </Label>
-        <Label fx:id="box44" alignment="CENTER" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: white;">
+        <Label fx:id="box44" alignment="CENTER" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: white;" textFill="WHITE">
             <font>
                 <Font name="Arial" size="58.0" />
             </font>
