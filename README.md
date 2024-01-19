@@ -1,6 +1,7 @@
 # WordleJava 🟩🟩🟦🟩🟥
 
-<img src="https://img.shields.io/badge/Java-F09112" alt="Java"> <img src="https://img.shields.io/badge/Game-8F4FA0" alt="Game">
+![hello](https://github.com/char-lie-ho/wordle/assets/116076259/0e175b23-555f-454b-97af-a513b3a7ff49)
+
 
 ![img_1.png](img_1.png)
 
