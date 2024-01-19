@@ -1,6 +1,6 @@
 # WordleJava (Under Development) 🟩🟩🟦🟩🟥
 
-![img_1.png](img_1.png)
+![img_1.png](src/main/image/img_1.png)
 
 
 Welcome to WordleJava, a recreation of the beloved [Wordle](https://www.nytimes.com/games/wordle/index.html) game by Josh Wardle. 
