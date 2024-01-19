@@ -44,7 +44,7 @@ public class WordList {
             "South", "Study", "Throw", "Until", "Space", "Stuff", "Tight", "Upper", "Upset", "Whole", "Waste", "Wound",
             "Urban", "Whose", "Watch", "Write", "Usage", "Woman", "Water", "Wrong", "Usual", "Train", "Wheel", "Wrote",
             "Valid", "World", "Where", "Yield", "Value", "Worry", "Which", "Young", "Video", "Worse", "While", "Youth",
-            "Virus", "Worst", "White", "Worth", "Visit", "Would", "Vital", "Voice"
+            "Virus", "Worst", "White", "Worth", "Visit", "Would", "Vital", "Voice", "Olive"
     };
 
     public static String getWord() {

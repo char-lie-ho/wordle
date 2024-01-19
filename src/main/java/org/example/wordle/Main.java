@@ -1,5 +1,6 @@
 package org.example.wordle;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -75,7 +76,7 @@ public class Main {
 
 
     public int count = 0;
-    //    WordList wordList = new WordList();
+
     String word = WordList.getWord();
 
     @FXML
@@ -90,11 +91,11 @@ public class Main {
                 row = new Label[]{box10, box11, box12, box13, box14};
             } else if (count == 2) {
                 row = new Label[]{box20, box21, box22, box23, box24};
-            }else if (count == 3) {
+            } else if (count == 3) {
                 row = new Label[]{box30, box31, box32, box33, box34};
-            }else if (count == 4) {
+            } else if (count == 4) {
                 row = new Label[]{box40, box41, box42, box43, box44};
-            }else if (count == 5) {
+            } else if (count == 5) {
                 row = new Label[]{box50, box51, box52, box53, box54};
             }
 
@@ -123,6 +124,39 @@ public class Main {
         } else {
             welcomeText.setText("Please enter a valid word.");
         }
+    }
+
+    @FXML
+    private void restartGame() {
+        // TODO: add a popup window to show the answer
+        count = 0;
+        welcomeText.setText("");
+        word = WordList.getWord();
+        setInvisible();
+        resetBox();
+    }
+
+    private void setInvisible() {
+        row1.setVisible(false);
+        row2.setVisible(false);
+        row3.setVisible(false);
+        row4.setVisible(false);
+        row5.setVisible(false);
+    }
+
+    private void resetBox() {
+
+        Label[] row = {box00, box01, box02, box03, box04, box10, box11, box12, box13, box14, box10, box11,
+                box12, box13, box14, box20, box21, box22, box23, box24, box30, box31, box32, box33, box34,
+                box40, box41, box42, box43, box44, box50, box51, box52, box53, box54};
+        for (Label label : row) {
+            label.setText("");
+            label.setStyle("-fx-background-color: #ffffff;");
+        }
+    }
+
+    public void showAnswer(ActionEvent e) {
+    // TODO: display the answer on screen when clicked
     }
 }
 
