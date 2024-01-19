@@ -1,4 +1,4 @@
-# WordleJava 🟩🟩🟦🟩🟥
+# WordleJavar (Under Development) 🟩🟩🟦🟩🟥
 
 ![hello](https://github.com/char-lie-ho/wordle/assets/116076259/0e175b23-555f-454b-97af-a513b3a7ff49)
 
