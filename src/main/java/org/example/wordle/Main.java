@@ -140,16 +140,14 @@ public class Main {
         count = 0;
         welcomeText.setText("");
         word = WordList.getWord();
-        setInvisible();
+        setInvisible(row1, row2, row3, row4,row5);
         resetBox();
     }
 
-    private void setInvisible() {
-        row1.setVisible(false);
-        row2.setVisible(false);
-        row3.setVisible(false);
-        row4.setVisible(false);
-        row5.setVisible(false);
+    private void setInvisible(HBox... rows) {
+        for (HBox row : rows) {
+            row.setVisible(false);
+        }
     }
 
     private void resetBox() {
