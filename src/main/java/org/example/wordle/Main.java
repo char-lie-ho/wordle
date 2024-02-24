@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.HBox;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -114,6 +115,7 @@ public class Main {
 
             for (int i = 0; i < guess.length(); i++) {
                 String letter = guess.substring(i, i + 1);
+                assert row != null;
                 row[i].setText(letter);
                 if (letter.equals(word.substring(i, i + 1))) {
                     row[i].setStyle("-fx-background-color: #5dc74e;");
@@ -129,7 +131,7 @@ public class Main {
         }
         // Empty the textField after each input
         guessInput.clear();
-        if (guess.equalsIgnoreCase(word)){
+        if (guess.equalsIgnoreCase(word)) {
             welcomeText.setText("Your guess is correct!");
         }
     }
@@ -140,18 +142,17 @@ public class Main {
         count = 0;
         welcomeText.setText("");
         word = WordList.getWord();
-        setInvisible(row1, row2, row3, row4,row5);
+        setInvisible(row1, row2, row3, row4, row5);
         resetBox();
     }
 
-    private void setInvisible(HBox... rows) {
+    public void setInvisible(HBox... rows) {
         for (HBox row : rows) {
             row.setVisible(false);
         }
     }
 
     private void resetBox() {
-
         Label[] row = {box00, box01, box02, box03, box04, box10, box11, box12, box13, box14, box10, box11,
                 box12, box13, box14, box20, box21, box22, box23, box24, box30, box31, box32, box33, box34,
                 box40, box41, box42, box43, box44, box50, box51, box52, box53, box54};
@@ -162,7 +163,7 @@ public class Main {
     }
 
     public void showHint(ActionEvent e) {
-    // TODO: display the answer on screen when clicked
+        // TODO: display the answer on screen when clicked
         List<Character> charList = new ArrayList<>();
         for (char c : word.toCharArray()) {
             charList.add(c);
