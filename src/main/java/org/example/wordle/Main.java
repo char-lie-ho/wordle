@@ -10,6 +10,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Drives the program.
+ *
+ * @author Charlie
+ * @version 2024
+ */
 public class Main {
     @FXML
     private TextField guessInput;
