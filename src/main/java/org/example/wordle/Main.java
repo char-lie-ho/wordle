@@ -152,7 +152,7 @@ public class Main {
         resetBox();
     }
 
-    public void setInvisible(HBox... rows) {
+    private void setInvisible(HBox... rows) {
         for (HBox row : rows) {
             row.setVisible(false);
         }
