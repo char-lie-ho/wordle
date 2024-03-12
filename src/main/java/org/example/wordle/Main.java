@@ -84,8 +84,7 @@ public class Main {
     @FXML
     private Label box54 = new Label();
 
-
-    public int count = 0;
+    private int count = 0;
 
     String word = WordList.getWord();
 
